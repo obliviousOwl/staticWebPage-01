@@ -1,0 +1,54 @@
+.bangers-regular {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Bangers', system-ui !important;
+  }
+
+  .hero-section {
+    background: url('images/Marvel_Television.svg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Increase the opacity for better contrast */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the overlay */
+}
+
+.hero-section h1,
+.hero-section p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+}
+
+.carousel-item img {
+    height: 400px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the images cover the entire area */
+  }
+
+.card-img {
+    height: 500px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    width: 100%; /* Ensure the image width matches the container width */
+}
